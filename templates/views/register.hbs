@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    {{>navbar}}     
+    
+    <div class="reg">
+        <div class="main">
+            <div class="left">
+                <h1>WELCOME</h1>
+                <h2>to complete MERN backend course</h2>
+            </div>
+            <div class="right">
+                <div class="toggle">
+                    <button>
+                        <div class="outer">
+                            <div class="inner1">Registration</div>
+                            <div class="inner2">Login</div>
+                        </div>
+                    </button>
+                </div>
+                <h1>Employee Registration form</h1>
+                <form action="/register" method="POST">
+                    <div class="form-left">
+                        <input type="text" placeholder="First Name*" name="firstname" id="fname" required>
+                        <input type="text" placeholder="Your Email*" name="email" id="email" required>
+                        <input type="number" placeholder="Your Phone*" name="phone" id="phone" required>
+                        <input type="number" placeholder=" Current Year*" name="year" id="year" required>
+                        <input type="password" placeholder="Password*" name="password" id="psw" required>
+                        <input type="text" placeholder="url" name="resumeurl" id="resumeurl" > 
+                    </div>
+                    <div class="form-right">
+                        <input type="text" placeholder="Last Name*" name="lastname" id="lname" required>
+                        <input class="radio" type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input class="radio" type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="number" placeholder="Enter your age*" name="age" id="age" required>
+                        <input type="password" placeholder="confirm Password*" name="confirmpassword" id="cpsw" required>
+                        <div class="button">
+                            <button type="submit">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

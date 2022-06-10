@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{userName}}</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="css/style2.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    
+
+    <header class="header">
+        {{>navbar}}
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">{{userName}}</span>
+        </div>
+        
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey,  {{userName}}</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            This is your portal consisting of  your details regarding your academics.
+            feel free to contact administrator for making any changes regarding the details.
+          </p>
+            
+        </div>
+        
+      </div>
+      <div class="home-hero__socials">
+        {{#each imageList}}
+        <div class="home-hero__social">
+          <a href="{{this.link}}" class="home-hero__social-icon-link">
+            <img
+              src="{{this.src}}"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+          
+        </div>
+        
+        
+         {{/each}}
+        </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main"> Your Resume</span>
+          <span class="heading-sec__sub">
+             <a href="{{resumelink}}">Click here </a> 
+            Please make sure your resume is up to date for training & placement cell purpose. 
+          </span>
+        </h2>
+        
+    </section>
+    
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">National institute of technology Delhi</h4>
+            <p class="main-footer__short-desc">
+              Plot No. FA7 Zone, P1, 
+              GT Karnal Road,
+              Delhi, 110036
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

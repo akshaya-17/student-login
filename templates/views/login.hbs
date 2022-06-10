@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    {{>navbar}}     
+    
+    <div class="reg">
+        <div class="main">
+            
+            <div class="right">
+               
+                <h1>Employee login</h1>
+                <form action="/login" method="POST">
+                    
+                    <div class="form-right">
+                        <input type="email" placeholder="email*" name="email" id="email" required>
+                        
+                        <input type="password" placeholder="Password*" name="password" id="cpsw" required>
+                        <div class="button">
+                            <button  btn="loginbtn" type="submit">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
